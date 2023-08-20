@@ -1,3 +1,4 @@
 nltk
+punkt
 streamlit
 scikit-learn
