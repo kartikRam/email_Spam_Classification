@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import string
 import nltk
-nltk.download('stopwords')
+stopwords=nltk.download('stopwords')
 
 from nltk.stem.porter import PorterStemmer
 nltk.download('punkt')
@@ -14,7 +14,7 @@ def text_transformation(text):
 
     for i in text:
         if i.isalnum():
-            if i not in nltk.stopwords.words('english') and i not in string.punctuation:
+            if i not in stopwords.words('english') and i not in string.punctuation:
                 y.append(i)
     return " ".join(y)
 
