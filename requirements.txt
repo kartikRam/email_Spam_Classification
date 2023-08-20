@@ -1,4 +1,4 @@
-nltk
+nltk==3.5
 punkt
 streamlit
 scikit-learn
